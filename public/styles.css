@@ -1,0 +1,19 @@
+
+  
+form{
+    display: flex;
+    flex-direction: row;
+}
+
+.bdy{
+   display: flex;
+   align-items: center;
+   
+}
+
+.btn{
+    font-weight: 900;
+}
+.container{
+    height: 100vh;
+}

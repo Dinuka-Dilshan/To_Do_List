@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body class="bdy">
+        <div class="container mx-auto mt-4 mb-4 " style=" width: fit-content;">
+
+            <h1 class="text-sm-start text-md-center"><%=title%></h1> 
+            
+            <div class="card"  style="width: 18rem;">
+                <div class="card-header text-sm-start text-md-center">
+                    <%=date%>
+                </div>
+                <ul class="list-group list-group-flush text-sm-start text-md-center">
+                    <%for( let x=0; x<tasks.length; x++){%>
+                        <li class="list-group-item"><input class="me-4"type="checkbox"><%=tasks[x]%></li>
+                    <%}%>
+                  
+                </ul>
+            </div>  
+            
+            <form class="my-2 mb-4"action="/" method="POST">
+                <input class="form-control " type="text" name="newItem" placeholder="add new item" autocomplete="off">
+                <button name="button" value="<%=button%>" id="btn" type="submit" class="btn btn-primary rounded-circle ms-2 ">+</button>
+            </form>
+            
+
+        </div>
+        
+    
+
+   
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
